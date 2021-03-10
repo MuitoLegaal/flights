@@ -1,38 +1,59 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+html body {
+  background-color: #1F2673;
+  padding: 5vh;
+  font-family: Roboto;
+}
+
+.App{
+  border-radius: 0.6%;
+  background: #46C2AF;
+  width: 100%;
+  height: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Title{
+  color:white;
+  font-size: 48;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Flights{
+  background-color: white;
+  vertical-align: middle;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.page-item{
+  color: #46C2AF;
+}
+
+.btn-primary {
+  background-color:#1F2673 !important;
   align-items: center;
+}
+
+.logo {
+  width: 10vh;
+  margin: 2vh;
+}
+
+.pagi {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.airline {
+ align-items: center;
 }
+
+/* input::-webkit-input-placeholder {
+  padding-left:10px;
+} */
