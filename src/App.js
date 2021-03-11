@@ -84,16 +84,17 @@ function App() {
 
   return (
     <div className="App container col-auto col-lg-10">
-      <h1 className="Title mb-2">
-        <img className="logo" alt="logo-tarmac" src={"../logo-tarmac.png"} />Tarmac Technologies
+      <h1 data-testid="title" className="Title mb-2">
+        <img className="logo" alt="logo-tarmac" src={"../logo-tarmac.png"} />
+        Tarmac Technologies
       </h1>
       <div className="search-row mb-4">
         <h2 style={{ color: 'white' }}>Departures</h2>
         <div>
-          <input style={{ width: 300, borderSize: '1px', color: '#1F2673', fontWeight: 'bold', marginBottom: '4px' }}
+          <input data-testid="input" style={{ width: 300, borderSize: '1px', color: '#1F2673', fontWeight: 'bold', marginBottom: '4px' }}
             rules={{ 'input:: -webkit-input-placeholder': { color: 'red' } }} type='text' placeholder="Search Airport, Carrier or Flight number"
             className="text" onChange={(e) => setSearch(e.target.value)} />
-          <Checkbox handleLanded={handleLanded} landed={landed} />
+          <Checkbox  handleLanded={handleLanded} landed={landed} />
         </div>
       </div>
       <Flights className='row' title="Departures" flights={currentFlight} loading={loading} />

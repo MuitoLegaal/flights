@@ -14,7 +14,7 @@ function PagiNation ({paginate, searchedFlights, flightsPerPage, currentPage}) {
 
     return (
    
-      <div className="pagi">
+      <div className="pagi" data-testid="pagination">
           {pageNumbersConst.map(number => (
             <Pagination key={number} size="lg" className="page_item">
               <Pagination.Item key={number} active={number === currentPage} className="paginationButton" onClick={() => paginate(number)} href='!#' className='page_link'>

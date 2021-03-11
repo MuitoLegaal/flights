@@ -6,13 +6,13 @@ import Table from 'react-bootstrap/Table';
 function Flights({ loading, flights }) {
 
 
-  if (loading) {
-    return <h2 style={{color: 'grey'}}>Loading...</h2>
+  if (loading || !flights) {
+    return <h2 style={{color: 'white'}}>Loading...</h2>
   }
 
   return (
 
-    <Table className='Flights' striped responsive bordered>
+    <Table data-testid="table" className='Flights' striped responsive bordered>
       <thead style={{ fontSize: 21 }}>
         <tr>
           <th className='align-middle'>Date</th>
