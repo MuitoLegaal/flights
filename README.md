@@ -4,5 +4,7 @@ Datas are collected from the aviationstack.com API and from the airhex.com API f
 To run the project:
 
 git clone https://github.com/MuitoLegaal/flights.git
+
 npm install
+
 npm start
