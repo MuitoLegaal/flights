@@ -7,7 +7,7 @@ function Flights({ loading, flights }) {
 
 
   if (loading) {
-    return <h2>Loading...</h2>
+    return <h2 style={{color: 'grey'}}>Loading...</h2>
   }
 
   return (
